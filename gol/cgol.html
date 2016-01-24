@@ -1,0 +1,47 @@
+
+<html> <head>
+<title>Conway's Game of Life</title>
+<link href="a2.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="../Images/favicon.ico" >
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<script src="gol.js"></script>
+</head>
+
+<body>
+<h1>Conway's Game of Life</h1>
+
+<div id="controls">
+  <form id="control_form">
+    <label>Width: <input id="width" type="text" name="width" value = "40"></label>
+    <label>Height: <input id="height" type="text" name="height" value = "40"></label>
+    <label id = "gameSpeed">Speed: <input id="speed" type="text" name="speed" value = "300"></label>
+    <button id = "makeGrid">New Grid</button>
+    <button id= "start_button">Start Game</button>
+	<button id = "stopGame">Stop</button>
+	<button id = "step">Advance</button>
+	<button id = "resetGame">Reset</button>
+	<button id = "randomize">Randomize</button><br>
+    <label>Neighbor Radius: <input id="radius" type="text" name="radius" value= "1"></label>
+    <label>Loneliness Threshold: <input id="loneliness" type="text" name="loneliness" value= "2"></label>
+    <label>Overpopulation Threshold: <input id="overpopulation" type="text" name="overpopulation" value= "3"></label><br>
+    <label>Generation Minimum: <input id="gmin" type="text" name="gmin" value= "3"></label>
+    <label>Generation Maximum: <input id="gmax" type="text" name="gmax" value= "3"></label>
+    Cells Off Grid:
+  	<select id="cellsOffGrid" onchange="changeMode()">
+		<option value="1">Always Alive</option>
+		<option value="2">Always Dead</option>
+		<option value="3">Toroidal</option>
+	</select><br>
+	<p style="color:white; font-size:13px;">Valid radius value ranges from 1 to 10.
+	Valid loneliness threshold, overpopulation threshold, generation minimum <br>and generation maximum values 
+	range from 1 to (4r<sup>2</sup> + 4r)-1 where r is the neighbor radius. Current limit for these fields is <span id="limitVal">7</span>.</p>
+  </form>
+</div>
+
+<div id="status_display">
+
+</div>
+
+<div id="gol"></div>
+
+</body> </html>
