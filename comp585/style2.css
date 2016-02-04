@@ -1,0 +1,136 @@
+@import url('http://fonts.googleapis.com/css?family=Bitter');
+@import url('http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+
+body{
+	color: black;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size:25px;
+	height: 100%;
+	background:black;
+	background-image: url("imgs/game.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#title{
+	text-align: center;
+	margin: 0 auto;
+    font-family: 'Yanone Kaffeesatz',sans-serif;
+}
+
+.jumbotron{
+	width: 70%;
+	margin: 1% 15%;
+	box-shadow: 3px 3px 10px black;
+	min-height: 700px;
+	background: white;
+	border: double 5px black;
+	border-radius: 50px;
+}
+
+.jumbotron p, ul li{
+	font-size: 19px;
+}
+
+
+#title h1{
+	text-align: center;
+	color: white;
+	font-size: 90px;  
+	margin: 0 auto;
+	padding: 2% 0;
+	text-shadow: 6px 4px black;
+}
+
+#title a{
+	text-decoration:none;
+	color: inherit;
+}
+
+#title a:hover{
+	cursor: pointer;	
+	color:black;
+	text-shadow: 6px 4px white;
+}
+
+
+footer{
+	height: 100px;
+	width: 100%;
+	bottom: 0;
+	margin-top: 40px;
+	padding:10px;
+	background-color: white;
+	text-align: center;
+	opacity: 0.7;
+	letter-spacing: 1px;
+	text-transform: lowercase;
+}
+
+table{
+	width: 1000px;
+	max-width: 100%;
+	border-collapse: separate; 
+	border-spacing: 1px;
+}
+
+td, th {
+	font-size: 14px;
+	padding: 5px 12px;
+	vertical-align: center;
+	transition: all 0.3s;
+	height: 8px;
+	border: 2px solid transparent;
+	background: #E0E0E0;
+	text-align: center;
+} /* Add borders to cells */
+
+th {
+background: linear-gradient(pink,#f6c4a2);  /* Darken header a bit */
+font-weight: bold;
+}
+
+td {
+background: #FAFAFA;
+}
+
+thead th:first-child {
+    border-radius: 15px 0 0 0;
+}
+thead th:last-child {
+    border-radius: 0 15px 0 0;
+}
+tr:last-child td:first-child {
+    border-radius: 0 0 0 15px;
+}
+tr:last-child td:last-child {
+    border-radius: 0 0 15px 0;
+}
+
+tr:nth-child(even) td { background: #FDEDEF; }   
+ 
+tr:nth-child(odd) td { background: #FFE2AD; }  
+td button{
+	color: #F7A48D; background: none; margin: 2%; border: none;
+}
+
+
+td button:hover { background: #666; color: #FFF; } /* Hover cell effect! */
+
+.jumbotron-requests{
+    min-height: 540px;
+	height: 100%;
+    padding-top: 5px;
+}
+.jumbotron{
+	overflow: hidden;
+}
+
+.topbar-content{
+	text-align:  center;
+}
+
+.row{
+	margin-left: 0;
+	margin-right: 0;
+}
