@@ -89,6 +89,7 @@ header.full-height > .jumbotron {
   z-index: 4;
   font-family: 'LMP';
   top: 24%;
+  margin: 1% 0;
   width: 100%;
   text-align: center;
   cursor: pointer;
