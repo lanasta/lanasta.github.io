@@ -68,28 +68,12 @@ header.full-height > .jumbotron {
 
 #pearlHacks{
   color: white;
-}
-
-#pearlHacks h2{
-  letter-spacing: 4px;
-  font-size: 4em;
+  letter-spacing: 2px;
+  font-size: 1.5em;
   position: absolute;;
   z-index: 4;
   font-family: 'LMP';
   top: 14%;
-  margin: 1% 0;
-  width: 100%;
-  text-align: center;
-  cursor: pointer;
-}
-
-#pearlHacks h3{
-  letter-spacing: 2px;
-  font-size: 1.3em;
-  position: absolute;;
-  z-index: 4;
-  font-family: 'LMP';
-  top: 25%;
   width: 100%;
   text-align: center;
   cursor: pointer;
@@ -98,6 +82,7 @@ header.full-height > .jumbotron {
 #pearlHacks a{
   text-decoration: none;
   color: inherit;
+  font-size: 2.1em;
 }
 
 #pearlHacks a:hover{
@@ -111,10 +96,10 @@ header.full-height > .jumbotron {
   /*max-width: 330px;
   max-height: 350px;*/
   height: auto;
-  max-width: 60%;
+  max-width: 30%;
   width: 24%;
   position: absolute;
-  top: 28%; bottom:0; left: 0; right:0;
+  top: 27%; bottom:0; left: 0; right:0;
   margin: auto;
   z-index: 5;
   -webkit-animation: pulsate 2s ease-out;
@@ -122,9 +107,9 @@ header.full-height > .jumbotron {
 }
 
 @-webkit-keyframes pulsate {
-    0% {-webkit-filter: drop-shadow(0px 0px 20px #fff6e9)}
-    50% {-webkit-filter: drop-shadow(0px 0px 15px #FFEFDA)}
-    100% {-webkit-filter: drop-shadow(0px 0px 20px white)}
+    0% {-webkit-filter: drop-shadow(0px 0px 15px #fff6e9)}
+    50% {-webkit-filter: drop-shadow(0px 0px 10px #FFEFDA)}
+    100% {-webkit-filter: drop-shadow(0px 0px 15px white)}
 }
 
 /*#ariel:hover8
