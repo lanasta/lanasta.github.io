@@ -73,7 +73,7 @@ header.full-height > .jumbotron {
   position: absolute;;
   z-index: 4;
   font-family: 'LMP';
-  top: 16%;
+  top: 18%;
   width: 100%;
   text-align: center;
   cursor: pointer;
@@ -83,6 +83,7 @@ header.full-height > .jumbotron {
   text-decoration: none;
   color: inherit;
   font-size: 1.9em;
+  line-height: 0;
 }
 
 #pearlHacks a:hover{
