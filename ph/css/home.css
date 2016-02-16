@@ -1,0 +1,293 @@
+/*import url('http://fonts.googleapis.com/css?family=Fira+Sans:300');*
+
+
+/* Little Miss Priss font import */
+@font-face {
+    font-family: 'LMP';
+    src: url('littlemisspriss-webfont.eot');
+    src: url('littlemisspriss-webfont.eot?#iefix') format('embedded-opentype'),
+         url('littlemisspriss-webfont.woff2') format('woff2'),
+         url('littlemisspriss-webfont.woff') format('woff'),
+         url('littlemisspriss-webfont.ttf') format('truetype'),
+         url('littlemisspriss-webfont.svg#littlemissprissmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('fira-sans.ultralight.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+	font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Fira Sans', sans-serif;
+	letter-spacing: 2px;
+}
+
+strong {
+	font-size:2.8em;
+	font-family: 'Fira Sans', sans-serif;
+	color:#ce4e6d;
+	letter-spacing: 2px;
+	line-height:1.4em;
+}
+
+
+header {
+  height: auto;
+  max-height: 1072px;
+  min-height: 400px;
+  width: 100%;
+}
+header.full-height > .jumbotron {
+  height: inherit;
+  max-height: inherit;
+  min-height: inherit;
+  padding: 0;
+	margin: 0;
+  background: radial-gradient(#151A51,#000029,#040510,#000000);
+}
+
+#header-image {
+  background-size: cover;
+  background-position: center bottom;
+  height: inherit;
+  width: 100%;
+  max-height: inherit;
+  min-height: inherit;
+  background-image: url(../images/gch2048.png);
+}
+
+#pearlHacks{
+  color: white;
+}
+
+#pearlHacks h2{
+  letter-spacing: 4px;
+  font-size: 4em;
+  position: absolute;;
+  z-index: 4;
+  font-family: 'LMP';
+  top: 13.5%;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+#pearlHacks h3{
+  letter-spacing: 2px;
+  font-size: 1.3em;
+  position: absolute;;
+  z-index: 4;
+  font-family: 'LMP';
+  top: 24%;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+#pearlHacks a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#pearlHacks a:hover{
+  text-decoration: none;
+  text-shadow: 3px 3px 12px #F2BB60;
+  color: inherit;
+  font-weight: bold;
+}
+
+#ariel img{
+  /*max-width: 330px;
+  max-height: 350px;*/
+  height: auto;
+  max-width: 42%;
+  width: 24%;
+  position: absolute;
+  top: 24%; bottom:0; left: 0; right:0;
+  margin: auto;
+  z-index: 5;
+  -webkit-animation: pulsate 2s ease-out;
+ -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulsate {
+    0% {-webkit-filter: drop-shadow(0px 0px 20px #fff6e9)}
+    50% {-webkit-filter: drop-shadow(0px 0px 15px #FFEFDA)}
+    100% {-webkit-filter: drop-shadow(0px 0px 20px white)}
+}
+
+/*#ariel:hover8
+    -webkit-filter: drop-shadow(0px 0px 20px #fff6e9);
+}*/
+  @media screen and (max-width: 500px) {
+   .ariel{
+     background-size: 150px 154px;
+     height: 154px;
+     width: 150px;
+     z-index: 5;
+   }
+  }
+
+#invitation {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Fira Sans';
+}
+
+div#content.container
+{
+  margin-top: 0px;
+}
+
+#invitation p
+{
+  margin: 0 0 2px;
+}
+
+#invitation .big {
+  font-size: 2rem;
+}
+
+#invitation .btn
+{
+  background-color: #CC2557;
+}
+
+#invitation .col-xs-8, #invitation .col-xs-offset-2 {
+  float: none;
+}
+
+#invitation img:first-child {
+  margin-bottom: -10%;
+}
+
+#invitation img {
+  width: 80%;
+  margin: auto;
+}
+
+#invitation img:last-child {
+  margin-top: -15%;
+}
+
+#invitation .content {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.jumbotron {
+  background-color: #FFF;
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+#mlh-trust-badge {
+	position: absolute;
+	top: 0;
+  right: 25px;
+  max-width: 80px;
+	width: 10%;
+	min-width: 60px;
+  z-index: 10;
+}
+
+#nav.affix-top {
+  z-index: 666;
+}
+#nav.affix {
+	top: 0;
+	border-width: 0 0 1px;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 666;
+}
+
+#welcome p {
+  font-size: 1.1em;
+}
+
+.panel-body{
+  font-size: 1.6rem;
+}
+
+@media (max-width : 1920px) {
+  #header-image {
+    background-image: url(../images/gch1920.png);
+  }
+
+  header {
+    max-height: 1005px;
+  }
+}
+
+@media (max-width : 1600px) {
+  #header-image {
+    background-image: url(../images/gch1600.png);
+  }
+
+  header {
+    max-height: 838px;
+  }
+}
+
+@media (max-width : 1440px) {
+  #header-image {
+    background-image: url(../images/gch1440.png);
+  }
+
+  header {
+    max-height: 754px;
+  }
+}
+
+@media (max-width : 1280px) {
+  #header-image {
+    background-image: url(../images/gch1280.png);
+  }
+
+  header {
+    max-height: 670px;
+  }
+}
+
+@media (max-width : 1024px) {
+  #header-image {
+    background-image: url(../images/gch1024.png);
+  }
+
+  header {
+    max-height: 536px;
+  }
+}
+
+@media (max-width : 768px) {
+  #header-image {
+    background-image: url(../images/gch768.png);
+  }
+
+  header {
+    max-height: 402px;
+  }
+}
+
+@media (max-width : 450px) {
+  #header-image {
+    background-image: url(../images/gch450.png);
+  }
+
+  header {
+    max-height: 800px;
+  }
+}
