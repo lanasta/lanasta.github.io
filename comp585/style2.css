@@ -1,10 +1,15 @@
 @import url('http://fonts.googleapis.com/css?family=Bitter');
 @import url('http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
 
+@font-face {
+  font-family: 'FiraSans';
+  src: url('fira-sans/FiraSans-Light.otf') format('opentype');
+}
+
 body{
 	color: black;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size:25px;
+	font-family: 'FiraSans', sans-serif;
+	font-size:18px;
 	height: 100%;
 	background:black;
 	background-image: url("imgs/game.jpg");
@@ -15,7 +20,7 @@ body{
 #title{
 	text-align: center;
 	margin: 0 auto;
-    font-family: 'Yanone Kaffeesatz',sans-serif;
+    font-family: 'FiraSans',sans-serif;
 }
 
 .jumbotron{
@@ -36,7 +41,7 @@ body{
 #title h1{
 	text-align: center;
 	color: white;
-	font-size: 90px;  
+	font-size: 65px;
 	margin: 0 auto;
 	padding: 2% 0;
 	text-shadow: 6px 4px black;
@@ -48,7 +53,7 @@ body{
 }
 
 #title a:hover{
-	cursor: pointer;	
+	cursor: pointer;
 	color:black;
 	text-shadow: 6px 4px white;
 }
@@ -70,7 +75,7 @@ footer{
 table{
 	width: 1000px;
 	max-width: 100%;
-	border-collapse: separate; 
+	border-collapse: separate;
 	border-spacing: 1px;
 }
 
@@ -107,9 +112,9 @@ tr:last-child td:last-child {
     border-radius: 0 0 15px 0;
 }
 
-tr:nth-child(even) td { background: #FDEDEF; }   
- 
-tr:nth-child(odd) td { background: #FFE2AD; }  
+tr:nth-child(even) td { background: #FDEDEF; }
+
+tr:nth-child(odd) td { background: #FFE2AD; }
 td button{
 	color: #F7A48D; background: none; margin: 2%; border: none;
 }
