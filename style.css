@@ -123,9 +123,9 @@
 			float:right;
 		}
 		.fixedwidth{
-			width: 70%;
-			height: 100%;
-			margin: 5% 15%;
+			width: 80%;
+			height: 90%;
+			margin: 5% 10%;
 		}
 
 		.fixedtop{
@@ -137,6 +137,7 @@
 			text-align: center;
 			padding: 1%;
 			margin: 1% 0 1% 0;
+			z-index: 12;
 			/*border: 5px solid #F3E2E7;
 			box-shadow: 1px 1px 1px 2px #E7C5CF;*/
 		}
@@ -211,11 +212,12 @@
 		}
 
 		#footer {
-			position: fixed;
+			position: relative;
 			height: 70px;
-			bottom: 0;
+			bottom: 20px;
 			text-align: center;
 			width: 100%;
+			z-index: -10;
 		}
 
 		#footer a{
