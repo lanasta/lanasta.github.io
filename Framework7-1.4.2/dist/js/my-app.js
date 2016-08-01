@@ -1,5 +1,9 @@
 // Initialize your app
-var myApp = new Framework7();
+var myApp = new Framework7({
+  materialRipple: true,
+  materialRippleElements: '.ripple, a.link, a.item-link, .button, .modal-button, .tab-link, .label-radio, .label-checkbox, .actions-modal-button, a.searchbar-clear, .floating-button',
+  animatePages: true,
+});
 
 // Export selectors engine
 var $$ = Dom7;
