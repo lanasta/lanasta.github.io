@@ -5377,7 +5377,9 @@ return t7;
         
                 // Define old and new pages
                 newPage = $(pagesInView[pagesInView.length - 2]);
-                if (view.params.domCache){
+                oldPage = $(pagesInView[pagesInView.length - 1]);
+                
+               	if (view.params.domCache){
                 	var pageNameFromUrl = (url.split("#")[1]).split("?")[0];
                 	if (newPage[0].f7PageData.name != pageNameFromUrl){
                 		var previousPages = newPage.prevAll('.page.page-on-left');
@@ -5390,7 +5392,6 @@ return t7;
                 		}
                 	}	
                 }
-                oldPage = $(pagesInView[pagesInView.length - 1]);
         
                 // Dynamic navbar
                 if (view.params.dynamicNavbar) {
@@ -5702,7 +5703,7 @@ return t7;
                     else {
                         // Just load previous page
                         previousPage = newPage.prevAll('.page.page-on-left');
-                        if (newNavbar) previousNavbar = newNavbar.prev('.navbar-inner.navbar-on-left');
+                        if (newNavbar) previousNavbar = newNavbar.prevAll('.navbar-inner.navbar-on-left');
                     }
                     if (previousPage && previousPage.length > 0) previousPage.removeClass('cached page-on-right page-on-center').addClass('page-on-left');
                     if (previousNavbar && previousNavbar.length > 0) previousNavbar.removeClass('cached navbar-on-right navbar-on-center').addClass('navbar-on-left');
