@@ -2986,7 +2986,7 @@
                 url = view.url;
 
                 newPage = $(pagesInView[pagesInView.length - 2]);
-                
+    
                 if (view.params.domCache){
             		var pageNameFromUrl = (url.split("#")[1]).split("?")[0];
                	 	if (newPage[0].f7PageData.name != pageNameFromUrl){
