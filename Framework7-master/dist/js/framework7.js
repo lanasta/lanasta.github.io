@@ -5702,7 +5702,7 @@ return t7;
                     else {
                         // Just load previous page
                         previousPage = newPage.prevAll('.page.page-on-left');
-                        if (newNavbar) previousNavbar = newNavbar.prev('.navbar-inner.cached');
+                        if (newNavbar) previousNavbar = newNavbar.prev('.navbar-inner.navbar-on-left');
                     }
                     if (previousPage && previousPage.length > 0) previousPage.removeClass('cached page-on-right page-on-center').addClass('page-on-left');
                     if (previousNavbar && previousNavbar.length > 0) previousNavbar.removeClass('cached navbar-on-right navbar-on-center').addClass('navbar-on-left');
