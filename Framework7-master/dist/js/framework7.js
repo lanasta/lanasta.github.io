@@ -2980,12 +2980,24 @@
                     view.allowPageChange = true;
                     return;
                 }
+                
                 // Update View's URL
                 view.url = view.history[view.history.length - 2];
                 url = view.url;
-        
-                // Define old and new pages
+
                 newPage = $(pagesInView[pagesInView.length - 2]);
+                var pageNameFromUrl = (url.split("#")[1]).split("?")[0];
+                if (newPage[0].f7PageData.name != pageNameFromUrl){
+                	var previousPages = newPage.prevAll('.page.page-on-left');
+                	for (var k = 0; k < previousPages.length; k++){
+                		if (previousPages[k].f7PageData.name == pageNameFromUrl){
+                			$(newPage).removeClass('page-on-left').addClass('cached');
+                			newPage = $(previousPages[k]);
+                			break;
+                		}
+                	}
+                }
+                
                 oldPage = $(pagesInView[pagesInView.length - 1]);
         
                 // Dynamic navbar
@@ -3195,7 +3207,7 @@
             // Remove old page and set classes on new one
             oldPage = $(oldPage);
             newPage = $(newPage);
-        
+            
             if (view.params.domCache && view.initialPages.indexOf(oldPage[0]) >= 0) {
                 oldPage.removeClass('page-from-center-to-right').addClass('cached');
             }
@@ -3285,9 +3297,8 @@
                         }
                     }
                     else {
-                        // Just load previous page
-                        previousPage = newPage.prev('.page.cached');
-                        if (newNavbar) previousNavbar = newNavbar.prev('.navbar-inner.cached');
+            			previousPage = newPage.prevAll('.page.page-on-left');
+                        if (newNavbar) previousNavbar = newNavbar.prevAll('.navbar-inner.navbar-on-left');
                     }
                     if (previousPage && previousPage.length > 0) previousPage.removeClass('cached page-on-right page-on-center').addClass('page-on-left');
                     if (previousNavbar && previousNavbar.length > 0) previousNavbar.removeClass('cached navbar-on-right navbar-on-center').addClass('navbar-on-left');
