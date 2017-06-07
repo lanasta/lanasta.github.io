@@ -2986,14 +2986,17 @@
                 url = view.url;
 
                 newPage = $(pagesInView[pagesInView.length - 2]);
-                var pageNameFromUrl = (url.split("#")[1]).split("?")[0];
-                if (newPage[0].f7PageData.name != pageNameFromUrl){
-                	var previousPages = newPage.prevAll('.page.page-on-left');
-                	for (var k = 0; k < previousPages.length; k++){
-                		if (previousPages[k].f7PageData.name == pageNameFromUrl){
-                			$(newPage).removeClass('page-on-left').addClass('cached');
-                			newPage = $(previousPages[k]);
-                			break;
+                
+                if (view.params.domCache){
+            		var pageNameFromUrl = (url.split("#")[1]).split("?")[0];
+               	 	if (newPage[0].f7PageData.name != pageNameFromUrl){
+                		var previousPages = newPage.prevAll('.page.page-on-left');
+                		for (var k = 0; k < previousPages.length; k++){
+                			if (previousPages[k].f7PageData.name == pageNameFromUrl){
+                				$(newPage).removeClass('page-on-left').addClass('cached');
+                				newPage = $(previousPages[k]);
+                				break;
+                			}
                 		}
                 	}
                 }
