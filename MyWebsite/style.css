@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Snippet|Lekton');
+
+body {
+    background-color: #f0f0f2;
+    margin: 0;
+    padding: 0;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    font-family: "Lekton", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a, a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  min-height:100%;
+  margin: 0 auto;
+  position:relative;
+}
+
+#header{
+  width: 70%;
+  margin: 3% auto;
+  position: relative;
+}
+
+#websiteTitle{
+    color: #56A8B2;
+    display: inline-block;
+    font-size: 3.7em;
+    letter-spacing: 2px;
+    font-family: 'Snippet', cursive;
+    text-shadow: 2px 2px 5px #b3d8dd;
+    position: relative;
+}
+
+#menuList{
+  color: grey;
+  display: inline-block;
+  float: right;
+  position: relative;
+  text-align: right;
+}
+
+#menuList ul{
+  list-style: none;
+}
+
+#menuList ul li{
+  display:inline-block;
+  float: left;
+  margin-right: 40px;
+  font-size: 2em;
+}
+
+#content {
+    width: 70%;;
+    margin: 5em auto;
+    padding: 50px;
+    background: linear-gradient(#EEDEEE, white);
+    border-radius: 1em;
+    border: 5px solid #EEDEEE;
+    box-shadow: 2px 2px 5px #EEDEEE;
+}
+
+#myPhoto{
+  width: 300px;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+#myName{
+  color: red;
+  font-size: bold;
+}
+
+#footer{
+  position: relative;
+  color: white;
+  text-align: center;
+  letter-spacing: 50px;
+  font-size: 4em;
+  bottom: 10px;
+}
+
+#footer a{
+  color: white;
+}
+
+#footer a:hover{
+   color:black;
+}
+
+@media (max-width: 700px) {
+    body {
+        background-color: #fff;
+    }
+    div {
+        width: auto;
+        margin: 0 auto;
+        border-radius: 0;
+        padding: 1em;
+    }
+}
