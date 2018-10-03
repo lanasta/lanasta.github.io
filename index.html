@@ -1,0 +1,137 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css-reset.css" />
+    <style type="text/css">
+    @font-face {
+      font-family: ShorelinesScript;
+      src: url("ShorelinesScript.otf") format("opentype");
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        background-image: url("Images/white-crackle.png");
+        background-size: cover;
+    }
+
+    div{
+      box-sizing: border-box;
+    }
+
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+
+    .wrapper{
+      position:fixed;
+      width:100%;
+      height:100%;
+      top:0px;
+      left:0px;
+      z-index:1000;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 5% 10%;
+    }
+
+    #header{
+      font-family: "ShorelinesScript";
+      font-size: 2em;
+      width: 30%;
+      display: inline-block;
+      position: relative;
+      line-height: 110%;
+    }
+
+    #navBar{
+      width: 70%;
+      display: inline-block;
+      position: relative;
+      float:right;
+      text-align:right;
+      letter-spacing: 1px;
+    }
+
+    #navBar li{
+      line-height: 110%;
+      cursor: pointer;
+    }
+
+    #navBar li:hover{
+      text-shadow: 2px 2px 5px lightgray;
+      font-weight: 500;
+    }
+
+    .content{
+      width: 80%;
+      margin: 20% auto;
+      text-align: center;
+      line-height: 150%;
+    }
+
+    .content h1{
+      font-size: 2em;
+      font-weight: 300;
+    }
+
+    @media (max-width: 700px) {
+        .wrapper {
+            padding: 10%;
+        }
+
+        #header, #navBar{
+          width: 100%;
+          text-align: center;
+        }
+
+        #navBar{
+          margin-bottom: 5%;
+        }
+
+        #navBar li{
+          line-height: 150%;
+        }
+
+        #header{
+          margin-bottom: 2%;
+        }
+
+        .content{
+          width: 90%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+<div class='wrapper'>
+    <div id='header'>
+      Anastasia <br>Lalamentik
+    </div>
+    <div id='navBar'>
+      <ul>
+        <li>design</li>
+        <li>code</li>
+        <li>travel</li>
+        <li>photography</li>
+      </ul>
+    </div>
+    <div class='content'>
+      I am a Durham, NC based software developer and designer passionate about creating beautiful, functional and practical
+      things. I enjoy the process of designing user interfaces and turning them into functional code. When I am
+      not traveling or exploring new places, you can find me hogging the TJ Maxx candle aisle, chilling at a local coffee shop,
+      ogling dogs and occasionally attempting to get fit at spin class. I enjoy playing the piano, the guitar
+      and producing beats despite being mediocre at all of them.
+    </div>
+</div>
+</body>
+</html>
