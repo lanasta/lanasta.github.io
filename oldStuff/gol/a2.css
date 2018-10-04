@@ -1,0 +1,84 @@
+@import url('http://fonts.googleapis.com/css?family=Quicksand');
+
+body{
+	margin: 50px 80px 50px 80px;
+	background: black;
+	clear:both;
+	color:limegreen;
+	font-family: 'Quicksand', 'Trebuchet MS', sans-serif;
+	font-size:18px;
+	padding:10px 10px 10px 10px;
+}
+
+#makeGrid, #start_game, #stopGame, #step, #resetGame, #randomize, #gameSpeed, #height, #width, #radius, #overpopulation, #gmin, #gmax, #loneliness{
+	display: inline-block;
+	margin:5px;
+}
+
+button{
+	background:black;
+	color:white;
+	border-radius:5px;
+	font-size: 13px;
+	cursor: pointer;	
+}
+
+h1{
+	background: black;
+	padding:6px;
+	border-radius: 30px;
+	width: 500px;
+	text-align:center;
+	text-shadow: 2px 3px white; 
+	border: 5px dotted limegreen;
+	box-shadow: 3px 3px 15px 0 white;
+}
+
+#cellsOffGrid{
+	font-size:18px;
+}
+
+input[type="text"] {
+    width: 3.0em;
+}
+
+div.space.dead {
+    border: thin solid lightgreen;
+}
+
+div.space.dead:hover {
+    background-color: mediumseagreen;
+}
+
+div.space.alive {
+    background-color: mediumseagreen;
+    border: thin solid lightgray;
+}
+
+div.space.hasBeenAlive {
+	border: thin solid black;
+}
+
+#control_form{
+	box-shadow: 0 0 5px 0 limegreen;
+	border: 1px groove limegreen;
+	width:870px;
+	border-radius:15px;
+	padding:8px;
+	text-align:center;
+}
+
+
+#gol {
+    width: 100%;
+    height: auto;
+    background: white;
+    box-shadow: 5px 5px 20px 0 gray;
+    border:3px solid gray;
+    border-radius: 5px;
+}
+
+#limitVal{
+	color:lime;
+	font-weight:bold;
+}

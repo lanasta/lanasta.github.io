@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="Images/favicon1.ico" >
     <link rel="stylesheet" type="text/css" href="css-reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="js/typed.js"></script>
@@ -23,189 +24,26 @@
     startTyping();
   });
 </script>
-    <style type="text/css">
-    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
-    @font-face {
-      font-family: ShorelinesScript;
-      src: url("ShorelinesScript.otf") format("opentype");
-    }
-
-    html, body {
-      height: 100%;
-      margin: 0;
-    }
-
-    body {
-        padding: 0;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 300;
-        background-image: url("Images/newnew.png");
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
-    div{
-      box-sizing: border-box;
-    }
-
-    a:link, a:visited {
-        color: #000;
-        text-decoration: none;
-    }
-
-    .wrapper{
-      position:fixed;
-      width:100%;
-      height:100%;
-      top:0px;
-      left:0px;
-      z-index:1000;
-      background-color: rgba(245,245,245, 0.83);
-      padding: 5% 10%;
-    }
-
-    #header{
-      font-family: "ShorelinesScript", Helvetica, Arial, sans-serif;
-      font-size: 2em;
-      width: 30%;
-      display: inline-block;
-      position: relative;
-      line-height: 110%;
-    }
-
-    #navBar{
-      width: 70%;
-      display: inline-block;
-      position: relative;
-      float:right;
-      text-align:right;
-      letter-spacing: 1px;
-    }
-
-    #navBar li{
-      line-height: 110%;
-      cursor: pointer;
-    }
-
-    #navBar li:hover{
-      text-shadow: 2px 2px 10px lightgray;
-      font-weight: 400;
-    }
-
-    #typedMessage{
-      font-family:'Roboto', Helvetica, Arial, sans-serif;
-      font-size: 3em;
-      height: 40px;
-      letter-spacing: 1px;
-      text-align: center;
-      width: 90%;
-      margin: 12% auto 2%;
-      position:relative;
-      display: block;
-    }
-
-    .content{
-      width: 80%;
-      margin: 2% auto;
-      text-align: center;
-      line-height: 150%;
-      display: block;
-    }
-
-    .content h1{
-      font-size: 2em;
-      font-weight: 300;
-    }
-
-    #profile{
-      width: 60%;
-      margin: 0 auto;
-    }
-
-    .footer{
-      position:relative;
-      bottom:0;
-      text-align: center;
-      width: 100%;
-      padding: 15% 0;
-      z-index: 1000;
-    }
-
-    #authorName{
-      margin-top:5px;
-      font-size: .65em;
-    }
-
-    @media (max-width: 900px) {
-
-      #typedMessage{
-        font-size: 2.7em;
-        margin-bottom: 3%;
-      }
-    }
-
-    @media (max-width: 600px) {
-        .wrapper {
-            padding-top: 10%;
-            overflow:auto;
-        }
-
-        #header, #navBar{
-          width: 100%;
-          text-align: center;
-          display: block;
-        }
-
-        #navBar{
-          margin-bottom: 4%;
-        }
-
-        #navBar li{
-          line-height: 150%;
-        }
-
-        #header{
-          margin-bottom: 2%;
-        }
-
-        .content{
-          width: 90%;
-        }
-
-        #typedMessage{
-          overflow: auto;
-          font-size: 2.3em;
-        }
-
-        #profile{
-          width: 85%;
-        }
-
-        .footer{
-          padding: 6% 0;
-        }
-    }
-    </style>
 </head>
 
 <body>
 <div class='wrapper'>
     <div id='header'>
-      Anastasia <br>Lalamentik
+      <a href='index.html'>Anastasia <br>Lalamentik</a>
     </div>
     <div id='navBar'>
       <ul>
-        <li>design</li>
-        <li>code</li>
-        <li>travel</li>
-        <li>photography</li>
+        <a href='design.html'><li>design</li></a>
+        <a href='https://github.com/lanasta'><li>code</li></a>
+        <a href='https://www.youtube.com/watch?v=bKTHBK-F5I4'><li>travel</li></a>
+        <a href='https://500px.com/anastasialalamentik'><li>photography</li></a>
       </ul>
     </div>
     <div id='typedMessage'></div>
     <div class='content'>
       <div id='profile'>
         I am a Durham, NC based software developer and designer passionate about creating beautiful, functional and practical user interfaces. I enjoy the process of creating designs and then implementing them with code.
-        The idea of simplifying complex data through visualizations excites me.
+         The idea of simplifying complex data by turning them into appealing visualizations excites me.
       </div>
       <!--When I am not traveling, hiking or exploring new places, you can find me hanging out at local coffee shops, watching cute animal videos, hogging the candle aisle at stores and occasionally attempting to get fit through spin class. I dabble in photography in my free time. I also enjoy playing the piano, the guitar and producing beats despite being highly mediocre at all of them. -->
     </div>
