@@ -41,6 +41,7 @@
         font-weight: 300;
         background-image: url("Images/newnew.png");
         background-size: cover;
+        background-attachment: fixed;
     }
 
     div{
@@ -121,22 +122,18 @@
       margin: 0 auto;
     }
 
-    footer{
+    .footer{
       position:relative;
       bottom:0;
       text-align: center;
       width: 100%;
-      padding-bottom: 3%;
+      padding: 15% 0;
       z-index: 1000;
-      top: 700px;
     }
 
-    .push{
-      height: 50px;
-    }
-
-    #footer a{
-
+    #authorName{
+      margin-top:5px;
+      font-size: .65em;
     }
 
     @media (max-width: 900px) {
@@ -144,10 +141,6 @@
       #typedMessage{
         font-size: 2.7em;
         margin-bottom: 3%;
-      }
-
-      footer{
-        top: 600px;
       }
     }
 
@@ -188,8 +181,8 @@
           width: 85%;
         }
 
-        footer{
-          top: 560px;
+        .footer{
+          padding: 6% 0;
         }
     }
     </style>
@@ -216,13 +209,12 @@
       </div>
       <!--When I am not traveling, hiking or exploring new places, you can find me hanging out at local coffee shops, watching cute animal videos, hogging the candle aisle at stores and occasionally attempting to get fit through spin class. I dabble in photography in my free time. I also enjoy playing the piano, the guitar and producing beats despite being highly mediocre at all of them. -->
     </div>
-    <div class="push"></div>
+    <div class="footer">
+      <a href="mailto:anastasialalamentik@gmail.com"><img src='Images/mail.png'></a>
+      <a href="http://github.com/lanasta"><img src='Images/github.png'></a>
+      <a href="http://linkedin.com/in/anastasialalamentik"><img src='Images/icons8-linkedin.png'></a>
+      <p id='authorName'>by Anastasia Lalamentik</p>
+    </div>
 </div>
-<footer>
-    <a href="mailto:anastasialalamentik@gmail.com"><img src='Images/mail.png'></a>
-    <a href="http://github.com/lanasta"><img src='Images/github.png'></a>
-    <a href="http://linkedin.com/in/anastasialalamentik"><img src='Images/icons8-linkedin.png'></a>
-    <p style='margin-top:5px; font-size: .65em; letter-spacing: 1px;'>by Anastasia Lalamentik</p>
-</footer>
 </body>
 </html>
