@@ -34,7 +34,7 @@ a:link, a:visited {
   top:0px;
   left:0px;
   z-index:1000;
-  background-color: rgba(245,245,245, 0.82);
+  background-color: rgba(245,245,245, 0.85);
   padding: 5% 10%;
 }
 
@@ -44,7 +44,7 @@ a:link, a:visited {
   width: 30%;
   display: inline-block;
   position: relative;
-  line-height: 110%;
+  line-height: 120%;
 }
 
 #navBar{
@@ -91,7 +91,7 @@ a:link, a:visited {
 }
 
 #profile{
-  width: 60%;
+  width: 53%;
   margin: 0 auto;
   text-align: center;
 }
@@ -135,7 +135,7 @@ a:link, a:visited {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .wrapper {
         padding: 5%;
         overflow:auto;
