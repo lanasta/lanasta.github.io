@@ -17,7 +17,7 @@
   $(function(){
     function startTyping(){
       $("#typedMessage").typed({
-        strings:['Hello!', 'こんにちは!', 'Bonjour!', '你好?', 'Aloha!', 'नमस्ते', 'Halo!', 'Olá!', 'Kamusta!', 'مرحبا', 'Xin chào!', 'Hallo!', 'Здравствуйте!', 'Sawubona!','Hallå', '여보세요!',  'Ahoj!', 'สวัสดี!', 'Szia!', 'Ciao!', 'Cześć!', 'Hello!'],
+        strings:['Hello!', 'こんにちは!', 'Bonjour!', '你好?', 'Aloha!', 'नमस्ते', 'Halo!', 'مرحبًا', 'Olá!', 'Kamusta!', 'Xin chào!', 'Hallo!', 'Здравствуйте!', 'হ্যালো', 'Sawubona!', 'Hallå', '여보세요!',  'Ahoj!', 'สวัสดี!', 'Szia!', 'ہیلو', 'Ciao!', 'ഹലോ', 'Cześć!', 'Hello!'],
         typeSpeed: 80
       });
     };
@@ -25,6 +25,15 @@
   });
 </script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPRQSM3NHT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SPRQSM3NHT');
+</script>
 
 <body>
 <div class='wrapper'>
@@ -42,30 +51,20 @@
     <div id='typedMessage'></div>
     <div class='content'>
       <div id='profile'>
-        I am currently pursuing an M.S. in Computer Science at the University of Virginia, and my research area is 
-        Human-Computer Interaction. I used to be based in North Carolina (Charlotte, Chapel Hill, Durham and Raleigh), 
-        studying and working as a software engineer in the beautiful Tar Heel State. I am originally from the fastest-sinking 
-        capital in the world, Jakarta 🇮🇩. I am passionate about creating beautiful and practical user interfaces, on top of exploring cool and upcoming technologies. I am also 
-        passionate about promoting technology education especially to underrepresented groups. <!--When I am not traveling, hiking or exploring new places, you can find me hanging out 
+        I am currently a <a href='https://www.linkedin.com/in/anastasialalamentik'>Full Stack Engineer at Kaleido</a> based in Raleigh, NC. Prior to joining, I was pursuing an M.S. in Computer Science at the University of Virginia, and my research area was 
+        Human-Computer Interaction specifically in <a href='https://libraetd.lib.virginia.edu/public_view/b5644s298'>haptics and accessibility</a>. I got my undergraduate degree from UNC Chapel Hill (Go Heels!), and I am originally from Jakarta, Indonesia 🇮🇩. I am passionate about <a href='https://www.youtube.com/watch?v=pGnYlUW5aLI'>web3</a>, creating beautiful and practical user interfaces, on top of exploring cool and upcoming technologies. I also 
+        enjoy promoting technology education especially to underrepresented groups. <!--When I am not traveling, hiking or exploring new places, you can find me hanging out 
         at local coffee shops, watching cute animal videos, hogging the candle aisle at stores and 
         occasionally attempting to get fit. I dabble in photography and music in my free time. -->
       </div>
     </div>
     <div class="footer">
-      <a href="mailto:anastasialalamentik@gmail.com"><img src='Images/mail.png'></a>
+      <!-- <a href="mailto:anastasialalamentik@gmail.com"><img src='Images/mail.png'></a>
       <a href="http://github.com/lanasta"><img src='Images/github.png'></a>
-      <a href="http://linkedin.com/in/anastasialalamentik"><img src='Images/icons8-linkedin.png'></a>
-      <p id='authorName'>by Anastasia Lalamentik</p>
+      <a href="http://linkedin.com/in/anastasialalamentik"><img src='Images/icons8-linkedin.png'></a> -->
+      💖
+      <p id='authorName'>Anastasia Lalamentik</p>
     </div>
 </div>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-58194504-1', 'auto');
-  ga('send', 'pageview');
-</script>
 </body>
 </html>

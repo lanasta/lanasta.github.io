@@ -13,7 +13,7 @@ body {
     padding: 0;
     font-family: "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif;
     font-weight: 300;
-    background-image: url("../Images/marbly.png");
+    background-image: url("../Images/greenstreaks.jpeg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -25,6 +25,7 @@ div{
 a:link, a:visited {
     color: #000;
     text-decoration: none;
+    font-weight: 400;
 }
 
 .wrapper{
@@ -34,7 +35,7 @@ a:link, a:visited {
   top:0px;
   left:0px;
   z-index:1000;
-  background-color: rgba(245,245,245, 0.87);
+  background-color: rgba(232,236,236, 0.85);
   padding: 5% 10%;
 }
 
@@ -49,7 +50,6 @@ a:link, a:visited {
 
 #navBar{
   width: 70%;
-  display: inline-block;
   position: relative;
   float:right;
   text-align:right;
@@ -57,8 +57,9 @@ a:link, a:visited {
 }
 
 #navBar li{
-  line-height: 110%;
+  margin: 8px 0;
   cursor: pointer;
+  font-weight: 300;
 }
 
 #navBar li:hover{
@@ -80,7 +81,7 @@ a:link, a:visited {
 
 .content{
   width: 80%;
-  margin: 2% auto;
+  margin: 3% auto;
   line-height: 150%;
   display: block;
 }
@@ -90,8 +91,12 @@ a:link, a:visited {
   font-weight: 300;
 }
 
+.designLinks a{
+  font-weight: 300
+}
+
 #profile{
-  width: 53%;
+  width: 56%;
   margin: 0 auto;
   text-align: center;
 }
@@ -142,12 +147,14 @@ a:link, a:visited {
     }
 
     #header, #navBar{
+      margin-top: 10%;
       width: 100%;
       text-align: center;
       display: block;
     }
 
     #navBar{
+      margin-top: 5%;
       margin-bottom: 4%;
     }
 
@@ -155,15 +162,12 @@ a:link, a:visited {
       line-height: 150%;
     }
 
-    #header{
-      margin-bottom: 2%;
-    }
-
     .content{
       width: 90%;
     }
 
     #typedMessage{
+      margin-top: 5%;
       overflow: auto;
       font-size: 2.3em;
     }
